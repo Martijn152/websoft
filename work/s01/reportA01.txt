@@ -1,0 +1,7 @@
+The general techniques of Git and GitHub were know to me, I had never worked with GitHub Pages before. I had also never fokrked a repository before. I have worked on repositories with other people and by myself before, but never used the forking functionality, always just branching. I have never worked with Markdown. I have never attached tags to any commit before.
+
+I have created several small websites using html and css. These were mostly to support programming with php.
+
+I have created several small web applications. I have worked with php using things like loops and statements, nothing advanced. I have a little experience with inserting javascript code into html documents, but this knowledge is very limited. I have also used Java Servlets before to create web applications. I have also created a system using a REST architecture before.
+
+I learned to set up the GitHub Pages functionality. I also learned that an html page called index.html will be displayed if a folder is targeted that contains that html page. I learned to attach tags to commit to disply the release version of that commit.
