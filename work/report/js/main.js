@@ -2,59 +2,51 @@
  * A function to wrap it all in.
  */
 (function () {
-    "use strict";
-    fillTable();
-
+    duckieSetup()
 }());
 
-function fillTable() {
+function duckieSetup() {
+    //Creating duckie and some of its variables
+    var duckie = {
+        image: 'img/duck.jpg',
+        position: {x: 10, y: 10},
+        HTMLelement: document.getElementById('duck')
+    };
 
-    const table = document.getElementById('table');
-    const url = 'schools.json';
+    //Creating move function
+    duckie.move = function (x, y) {
+        this.position.x = x;
+        this.position.y = y;
+    };
 
-    fetch(url)
-        .then((data) => data.json())
-        .then(function (data) {
+    //Creating draw function
+    duckie.draw = function () {
+        this.HTMLelement.style.backgroundImage = 'url(' + this.image + ')';
+        this.HTMLelement.style.top = this.position.y + 'px';
+        this.HTMLelement.style.left = this.position.x + 'px';
+    };
 
-            //Prepping the data for use
-            data = JSON.stringify(data);
-            data = JSON.parse(data);
+    //Drawing duckie for the first time
+    duckie.draw();
 
-            //Creating the column names
-            var keys = Object.keys(data.Skolenheter[0]);
-            var thead = table.createTHead();
-            var headRow = thead.insertRow();
-            keys.forEach(function (key) {
-                var th = document.createElement("th");
-                var text = document.createTextNode(key);
-                th.appendChild(text);
-                headRow.appendChild(th);
-            });
+    //Adding onclick listener so it moves when clicked
+    duckie.HTMLelement.addEventListener('click', function (event) {
+        //console.log('Clicked on: ' + event.clientX + ' x ' + event.clientY);
+        duckie.move(Math.random() * 1000, Math.random() * 500);
+        duckie.draw();
+    });
 
-            //Logging length of the data set
-            console.log("Columns in Skolenheter: " + data.Skolenheter.length);
-
-            //Add new row for each school
-            data.Skolenheter.forEach(function(element){
-               var row = table.insertRow();
-
-               //Get keys to be able to iterate through the elements for the row
-               var elementKeys = Object.keys(element);
-
-               //Add new cell for each element in the row
-               elementKeys.forEach(function (elementCell) {
-                   var cell = row.insertCell();
-                   cell.append(document.createTextNode(element[elementCell]));
-               });
-            });
-
-
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
+    //Creating the timer to hide and show the duckie
+    var round = 1;
+    window.setInterval(function () {
+        if (round === 1) {
+            duckie.HTMLelement.style.visibility = "visible";
+            round = 0;
+        } else {
+            duckie.HTMLelement.style.visibility = "hidden";
+            round = 1;
+        }
+    }, 3000);
 
 }
-
 	
