@@ -1,4 +1,9 @@
+# nodejs
 node_modules/
 package-lock.json
 *.xml
 *.iml
+# dotnet
+project.lock.json
+[Bb]in/
+[Oo]bj/
