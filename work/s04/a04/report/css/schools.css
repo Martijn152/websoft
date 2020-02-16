@@ -1,0 +1,27 @@
+/*
+ * Comments are written as C++ style.
+ */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 8px auto;
+    background: #fff;
+    width: 700px;
+}
+
+table {
+    background-color: mintcream;
+}
+
+th, tr, table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th{
+    height: 40px;
+    background-color: chartreuse;
+}
