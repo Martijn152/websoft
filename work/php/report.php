@@ -104,7 +104,12 @@
 
     <section>
         <h2>S06</h2>
-        <p>Here is the text for this section.</p>
+        <p>I think having popular programming languages is tremendously important and beneficial. The fact that most programmers will know these languages allows for great amounts of collaboration. This in itself is a great boon to the world of software development. If it would be possible, bringing all programming languages together to a few that suit all needs would be ideal.</p>
+        <p>I am interested in programming languages for which I feel they suit the current need I have. In addition to this, I want the language to feel like I do not have to do things that feel unnecessary or redundant to make things work.</p>
+        <p>See my comparison below. It looks like C++ interest has slowly been going down since the start of the comparison. The decrease in interest has slowed down in the recent years. There is a passing point around 2012 where Python interest passed C++ interest, mostly because of the decrease of interest in C++.</p>
+        <p><img src="img/comparison.png" width="400" alt="Comparison image"></p>
+        <p>Since there are so many languages that I do not have experience with, it is hard to recommend one fully. There is simply so much that I don't know that it would feel quite close-minded to already recommend something. However, if I had to choose at this very moment I would most likely recommend PHP for it's capabilities as a server side programming language for web development.</p>
+        <p>I don't feel I learned much in this section. The lectures were hard to follow by only reading since they are mostly key words. I suppose I have learned of the existence of a bunch of frameworks for JavaScript and PHP.</p>
     </section>
 
     <section>
