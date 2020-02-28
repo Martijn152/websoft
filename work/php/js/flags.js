@@ -10,6 +10,9 @@
     var canvas3 = document.getElementById("canvas3");
     var ctx3 = canvas3.getContext("2d");
 
+
+
+
     document.getElementById("buttonNetherlands").addEventListener('click', function (event) {
         drawNetherlands(ctx1);
     });
@@ -19,6 +22,10 @@
     document.getElementById("buttonGreece").addEventListener('click', function (event) {
         drawGreece(ctx3);
     });
+
+
+
+
     canvas1.addEventListener('click',function () {
         canvas1.style.opacity= "0";
     });

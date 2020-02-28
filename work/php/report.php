@@ -1,22 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Report from the course sections</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-<div id='duck' style="height: 100px; width: 100px; position: absolute"></div>
-
-
-<header>
-    <?php
-    include 'view/header.php';
-    ?>
-</header>
-
+<?php
+include 'view/docStart.php';
+include 'view/header.php';
+?>
 
 <article>
 
@@ -61,9 +46,14 @@
 
     <section>
         <h2>S03</h2>
-        <p>I did not really have any previous experience with using javascript in separate files. I had used javascript a little bit by directly inserting it into an html file. Furthermore, this code was borrowed from someone else and I did not fully understand it yet.</p>
-        <p>JavaScript seems similar in basics to Java and php, regarding things like variables and such. In general it also seems pretty similar to Java, using objects with attributes and methods/functions and such.</p>
-        <p>I took the assignment simply step by step. I started with all the requirements for grade 3 and then worked on to the grade 5 requirements. One of the trickier parts for me was getting the JSON files locally at the very start. After that just taking it step by step worked fine.</p>
+        <p>I did not really have any previous experience with using javascript in separate files. I had used javascript
+            a little bit by directly inserting it into an html file. Furthermore, this code was borrowed from someone
+            else and I did not fully understand it yet.</p>
+        <p>JavaScript seems similar in basics to Java and php, regarding things like variables and such. In general it
+            also seems pretty similar to Java, using objects with attributes and methods/functions and such.</p>
+        <p>I took the assignment simply step by step. I started with all the requirements for grade 3 and then worked on
+            to the grade 5 requirements. One of the trickier parts for me was getting the JSON files locally at the very
+            start. After that just taking it step by step worked fine.</p>
         <p>I learned:</p>
         <p> - How to set file preference in Chrome from XML to JSON</p>
         <p> - How to work with JavaScript objects, including setting parameter</p>
@@ -78,9 +68,15 @@
     <section>
         <h2>S04</h2>
         <p>I did not have any previous experience with programming tools like node and npm.</p>
-        <p>Node and Express seem to form a good framework to build larger and more interactive websites on. Node and Express are not easy to work with when you start out and need some practice to get working well. Things like getting the information in request headers takes some searching to find.</p>
-        <p>I did not have any notable plan for the coding assignment. My usual way of doing these takes a few steps. First, I start with reading the lecture notes. Then I read the articles suggested (the Node and Express articles in this cas). After that I start with the actual assignment. When I get stuck I try to refer to the lectures or articles and after that I will search the Internet.</p>
-        <p>I aimed for grade 5. The difference between the tasks for grade 4 and grade 5 was very small. The harder step was getting from grade 3to grade 4.</p>
+        <p>Node and Express seem to form a good framework to build larger and more interactive websites on. Node and
+            Express are not easy to work with when you start out and need some practice to get working well. Things like
+            getting the information in request headers takes some searching to find.</p>
+        <p>I did not have any notable plan for the coding assignment. My usual way of doing these takes a few steps.
+            First, I start with reading the lecture notes. Then I read the articles suggested (the Node and Express
+            articles in this cas). After that I start with the actual assignment. When I get stuck I try to refer to the
+            lectures or articles and after that I will search the Internet.</p>
+        <p>I aimed for grade 5. The difference between the tasks for grade 4 and grade 5 was very small. The harder step
+            was getting from grade 3to grade 4.</p>
         <p>I learned:</p>
         <p> - The basics of working with npm, Node and Express</p>
         <p> - How to structure an express server using routers and middleware</p>
@@ -90,9 +86,13 @@
 
     <section>
         <h2>S05</h2>
-        <p>I appreciate PHP. It allows for very modular design with it's include function. I also like how it is really easy to work it into your HTML file, since it can basically be placed anywhere on the page.</p>
-        <p>PHP reminds me mostly of Python, as well as JavaScript a little. It feels very different from Java with declaring variables for example. The way it integrates in HTML is something I have not really seen before.</p>
-        <p>I took pretty much the same plan as in the last coding exercise. For this one, however, the lectures I found were only in Swedish and therefore not very helpful.</p>
+        <p>I appreciate PHP. It allows for very modular design with it's include function. I also like how it is really
+            easy to work it into your HTML file, since it can basically be placed anywhere on the page.</p>
+        <p>PHP reminds me mostly of Python, as well as JavaScript a little. It feels very different from Java with
+            declaring variables for example. The way it integrates in HTML is something I have not really seen
+            before.</p>
+        <p>I took pretty much the same plan as in the last coding exercise. For this one, however, the lectures I found
+            were only in Swedish and therefore not very helpful.</p>
         <p>I (re-)learned:</p>
         <p> - How to use PHP in its basic form, declaring variables and such</p>
         <p> - How to split page into common parts and use those efficiently using PHP inclusion</p>
@@ -104,12 +104,24 @@
 
     <section>
         <h2>S06</h2>
-        <p>I think having popular programming languages is tremendously important and beneficial. The fact that most programmers will know these languages allows for great amounts of collaboration. This in itself is a great boon to the world of software development. If it would be possible, bringing all programming languages together to a few that suit all needs would be ideal.</p>
-        <p>I am interested in programming languages for which I feel they suit the current need I have. In addition to this, I want the language to feel like I do not have to do things that feel unnecessary or redundant to make things work.</p>
-        <p>See my comparison below. It looks like C++ interest has slowly been going down since the start of the comparison. The decrease in interest has slowed down in the recent years. There is a passing point around 2012 where Python interest passed C++ interest, mostly because of the decrease of interest in C++.</p>
+        <p>I think having popular programming languages is tremendously important and beneficial. The fact that most
+            programmers will know these languages allows for great amounts of collaboration. This in itself is a great
+            boon to the world of software development. If it would be possible, bringing all programming languages
+            together to a few that suit all needs would be ideal.</p>
+        <p>I am interested in programming languages for which I feel they suit the current need I have. In addition to
+            this, I want the language to feel like I do not have to do things that feel unnecessary or redundant to make
+            things work.</p>
+        <p>See my comparison below. It looks like C++ interest has slowly been going down since the start of the
+            comparison. The decrease in interest has slowed down in the recent years. There is a passing point around
+            2012 where Python interest passed C++ interest, mostly because of the decrease of interest in C++.</p>
         <p><img src="img/comparison.png" width="400" alt="Comparison image"></p>
-        <p>Since there are so many languages that I do not have experience with, it is hard to recommend one fully. There is simply so much that I don't know that it would feel quite close-minded to already recommend something. However, if I had to choose at this very moment I would most likely recommend PHP for it's capabilities as a server side programming language for web development.</p>
-        <p>I don't feel I learned much in this section. The lectures were hard to follow by only reading since they are mostly key words. I suppose I have learned of the existence of a bunch of frameworks for JavaScript and PHP.</p>
+        <p>Since there are so many languages that I do not have experience with, it is hard to recommend one fully.
+            There is simply so much that I don't know that it would feel quite close-minded to already recommend
+            something. However, if I had to choose at this very moment I would most likely recommend PHP for it's
+            capabilities as a server side programming language for web development.</p>
+        <p>I don't feel I learned much in this section. The lectures were hard to follow by only reading since they are
+            mostly key words. I suppose I have learned of the existence of a bunch of frameworks for JavaScript and
+            PHP.</p>
     </section>
 
     <section>
@@ -132,15 +144,9 @@
         <p>Here is the text for this section.</p>
     </section>
 
-    <footer>
-    <?php
-    include 'view/footer.php';
-    ?>
-    </footer>
-
 </article>
 
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+<?php
+include 'view/footer.php';
+include 'view/docEnd.php';
+?>

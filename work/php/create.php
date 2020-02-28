@@ -1,22 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Create page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-<div id='duck' style="height: 100px; width: 100px; position: absolute"></div>
-
-
-<header>
-    <?php
-    include 'view/header.php';
-    ?>
-</header>
-
+<?php
+include 'view/docStart.php';
+include 'view/header.php';
+?>
 
 <article>
 
@@ -37,12 +22,9 @@
         $label = $_GET['label'];
         $type = $_GET['type'];
 
-        echo 'You entered: ' . $label . ' and ' . $type .'<br>';
+        echo 'You entered: ' . $label . ' and ' . $type . '<br>';
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "websoft";
+        include 'dbdata.php';
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -53,7 +35,7 @@
 
         $sql = "
 INSERT INTO tech (label, type)
-VALUES ('" . $label ."', '" . $type . "')";
+VALUES ('" . $label . "', '" . $type . "')";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
@@ -66,16 +48,9 @@ VALUES ('" . $label ."', '" . $type . "')";
     }
 
     ?>
-
-
 </article>
 
-<footer>
-    <?php
-    include 'view/footer.php';
-    ?>
-</footer>
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+<?php
+include 'view/footer.php';
+include 'view/docEnd.php';
+?>

@@ -15,7 +15,7 @@ table {
     background-color: mintcream;
 }
 
-th, tr, table{
+th, tr, table, td{
     border: 1px solid black;
     border-collapse: collapse;
     text-align: left;

@@ -1,21 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>About this site</title>
-    <link rel="stylesheet" href="css/flags.css">
-    <link rel="icon" href="favicon.ico">
-</head>
+<?php
+include 'view/docStart.php';
+include 'view/header.php';
+?>
 
-<body>
-<div id='duck' style="height: 100px; width: 100px; position: absolute"></div>
-
-
-<header>
-    <?php
-    include 'view/header.php';
-    ?>
-</header>
 
 
 <article>
@@ -33,13 +20,9 @@
 
 </article>
 
-<footer>
-    <?php
-    include 'view/footer.php';
-    ?>
-</footer>
-
 <script type="text/javascript" src="js/flags.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+
+<?php
+include 'view/footer.php';
+include 'view/docEnd.php';
+?>

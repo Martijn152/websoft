@@ -1,3 +1,4 @@
+<header>
     <nav>
         <a href="me.php">Me</a> |
         <a href="report.php">Report</a> |
@@ -10,3 +11,4 @@
         <a href="delete.php">Delete</a> |
         <a href="read.php">Read</a>
     </nav>
+</header>

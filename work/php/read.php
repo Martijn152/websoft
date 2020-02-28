@@ -1,33 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Read page</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/schools.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-<div id='duck' style="height: 100px; width: 100px; position: absolute"></div>
-
-
-<header>
-    <?php
-    include 'view/header.php';
-    ?>
-</header>
-
+<?php
+include 'view/docStart.php';
+include 'view/header.php';
+?>
 
 <article>
 
     <h1>Read the contents of the tech table</h1>
 
     <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "websoft";
+
+    include 'dbdata.php';
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -42,7 +24,8 @@
 
     ?>
 
-    <p style="font-style:italic">Clicking the Delete or Update links will take you to a page where you can finish the operation in question. The row you have selected will be pre-filled into the needed fields.</p>
+    <p style="font-style:italic">Clicking the Delete or Update links will take you to a page where you can finish the
+        operation in question. The row you have selected will be pre-filled into the needed fields.</p>
 
     <table>
         <tr>
@@ -88,15 +71,9 @@
     $conn->close();
     ?>
 
-
 </article>
 
-<footer>
-    <?php
-    include 'view/footer.php';
-    ?>
-</footer>
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+<?php
+include 'view/footer.php';
+include 'view/docEnd.php';
+?>

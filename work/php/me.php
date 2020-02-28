@@ -1,23 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Presentation of my self in the course XXX</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-
-<div id='duck' style="height: 100px; width: 100px; position: absolute"></div>
-
-
-<header>
-    <?php
-    include 'view/header.php';
-    ?>
-</header>
-
+<?php
+include 'view/docStart.php';
+include 'view/header.php';
+?>
 
 <article>
 
@@ -32,17 +16,7 @@
 
 </article>
 
-<footer>
-    <?php
-    include 'view/footer.php';
-    ?>
-</footer>
-
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
-
 <?php
-
+include 'view/footer.php';
+include 'view/docEnd.php';
 ?>

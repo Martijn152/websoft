@@ -2,10 +2,15 @@
  * A function to wrap it all in.
  */
 (function () {
+
     duckieSetup()
 }());
 
 function duckieSetup() {
+    var duckieCounter = 0;
+    var counterElement = document.getElementById('counterElement');
+
+
     //Creating duckie and some of its variables
     var duckie = {
         image: 'img/duck.jpg',
@@ -34,6 +39,9 @@ function duckieSetup() {
         //console.log('Clicked on: ' + event.clientX + ' x ' + event.clientY);
         duckie.move(Math.random() * 1000, Math.random() * 500);
         duckie.draw();
+        duckieCounter += 1;
+        counterElement.innerHTML = '';
+        counterElement.append(document.createTextNode("Duckies caught: " + duckieCounter));
     });
 
     //Creating the timer to hide and show the duckie
