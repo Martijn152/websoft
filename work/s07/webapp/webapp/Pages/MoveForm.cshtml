@@ -1,0 +1,23 @@
+﻿@page
+@using webapp.Pages
+@model MoveForm
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Move form</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        @Html.AntiForgeryToken()
+        <input type="text" name="numberFrom" placeholder="move from"><br>
+        <input type="text" name="numberTo" placeholder="move to"><br>
+        <input type="text" name="amount" placeholder="amount"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>@Model.Message</p>
+</div>
+</body>
+</html>
