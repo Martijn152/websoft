@@ -126,7 +126,16 @@ include 'view/header.php';
 
     <section>
         <h2>S07</h2>
-        <p>Here is the text for this section.</p>
+        <p>.NET is a very extensive framework with a lot of built-in ways of interacting between components of a project. There is loads of support for things like dependecies and testing.</p>
+        <p>Using .NET seems to allow for functional code pretty much EVERYWHERE in whatever you are creating. Languages like PHP are not so versatile as to be used in things like console apps etc.</p>
+        <p>I took the same approach to the coding exercise as before. I aimed for grade 5.</p>
+        <p>I learned:</p>
+        <p> - How to code in C#</p>
+        <p> - How .NET generally works in regards of things like namespaces etc.</p>
+        <p> - How to use the console in C# and .NET</p>
+        <p> - How to create a web application in ASP.NET using the MVC template</p>
+        <p> - How to generally use Razor pages</p>
+        <p> - How to set up different actions in an ASP.NET MVC Controller</p>
     </section>
 
     <section>
