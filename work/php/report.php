@@ -160,8 +160,16 @@ include 'view/header.php';
 
     <section>
         <h2>S09</h2>
-        <p>Here is the text for this section.</p>
-    </section>
+        <p>Issue 1: Input Sanitizing. This is something I don't do nearly enough. In the OWASP top ten this vulnerability is number 1.</p>
+        <p>Issue 2: Having safe URLs in terms of redirecting and reading data from URLs. Also applicable when creating APIs. In my experience I quite often get data straight from the URLs (especially in some of the course assignments), which is not a good idea since this is very open to injection. In the OWASP top ten this would fall under injection (number 1) and possibly XSS (number 7).</p>
+        <p>Issue 3: Serializing and deserializing of objects. This is something I had never even considered to be a vulnerability, and which makes it all the more dangerous. In the OWASP top ten this vulnerability is number 8.</p>
+		<p>So the main guidelines I would give are: sanitize your input, practice the principle of least privilege, move any data through the safest possible channels, make sure you configure everything as safe as possible.</p>
+		<p>I learned:</p>
+		<p> - Of the existence of the OWASP top ten securtiy vulnerabilities</p>
+		<p> - Roughly what each of the OWASP top ten entails and how to generally prevent them</p>
+		<p> - Of the existence of several vulnerabilities that I'd never considered</p>
+		<p> - That some of my practices are very unsafe</p>
+	</section>
 
     <section>
         <h2>S10</h2>
