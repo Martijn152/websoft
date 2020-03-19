@@ -173,7 +173,10 @@ include 'view/header.php';
 
     <section>
         <h2>S10</h2>
-        <p>Here is the text for this section.</p>
+        <p>The project was relatively challenging to implement because of the fact we were using Firebase and PHP. Firebase and PHP is not a very common combination and therefore the documentation is not as extensive. I also found that it was quite a lot of work to dig through the documentation to find what we were looking for. Creating the website itself and styling it was easy, but the connection to the database was more difficult. I also struggled a bit with setting up the proper authentication for each page and making sure it would be inaccessible if the user wasn't authenticated. The teamwork went well, since we had worked together a few times already and knew what to expect.</p>
+        <p>I did enjoy the course. I appreciated that we studied a lot of different techniques and programming languages in the realm of web development, although I think this was challenging for a lot of people. For the course material I would suggest having everything in one place. Although I did appreciate the GitHub page, I would suggest putting it all on Canvas. I strongly dislike the wide use of video's as study material, but I am very aware that this is a personal thing and a lot of people do appreciate having video's. I would prefer having written study material i.e. books, slides with text, articles. I found there were sometimes unclarities in course assignments and in studying for the exam, partly because of sub-optimal English and partly because of lack of explanation. I would give the course a grade of 7. </p>
+        <p>To be honest I learned too many things to list here so I will just give a short summary.</p>
+        <p>I learned about software development for the web, ranging from server-side frameworks to webpage performance to client-side functional code. I learned how to use HTML, CSS, JavaScript, Node, Express, PHP, the XAMPP package, .NET, ASP.NET, C#, several webpage analysis tools, etc. I learned about security vulnerabilities and the popularity of programming languages. I learned about JSON and how it is related to objects in JavaScript and PHP.</p>
     </section>
 
 </article>
